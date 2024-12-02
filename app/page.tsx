@@ -5,10 +5,11 @@ import NewsList from "@/app/_components/NewsList";
 import ButtonLink from "@/app/_components/ButtonLink";
 import { News } from "@/app/_libs/microcms";
 
-const data: {contents: News[] } = {
+const data: { contents: News[] } = {
   contents: [
     {
-      id: "1",title:"渋谷にオフィスを移転しました",
+      id: "1",
+      title: "渋谷にオフィスを移転しました",
       category: {
         name: "更新情報",
       },
@@ -40,7 +41,7 @@ export default function Home() {
   // const sliceData = data.contents.slice(0, 2);
   const sliceData = data.contents.slice(0, 2);
 
-  return(
+  return (
     <>
       <section className={styles.top}>
         <div>
@@ -67,5 +68,3 @@ export default function Home() {
     </>
   );
 }
-
-
