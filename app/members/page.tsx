@@ -2,8 +2,7 @@ import Image from "next/image";
 import { getMembersList } from "@/app/_libs/microcms";
 import styles from "./page.module.css";
 
-
-export default function Page() {
+export default async function Page() {
   const data = await getMembersList();
   return (
     <div className={styles.container}>
