@@ -1,6 +1,5 @@
 import Hero from "@/app/_components/Hero";
 import Sheet from "@/app/_components/Sheet";
-import exp from "constants"; //削除する
 
 type Props = {
   children: React.ReactNode;
