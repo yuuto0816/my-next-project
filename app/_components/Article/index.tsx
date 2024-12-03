@@ -18,8 +18,20 @@ export default function Article({data}: Props) {
         <Date date={data.publishedAt ?? data.createdAt} />
       </div>
       {data.thumbnail && (
-        
+        <Image
+        src={data.thumbnail.url}
+        alt=""
+        className={styles.thumbnail}
+        width={data.thumbnail.width}
+        height={data.thumbnail.height}
+        />
       )}
+      <div
+      className={styles.content}
+      dangerouslySetInnerHTML={{
+        __html: data.content,
+      }}
+      />
     </main>
-  )
+  );
 }
