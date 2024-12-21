@@ -22,11 +22,13 @@ export default async function Home() {
           </p>
         </div>
         <Image
-          className={styles.bgimg}
+          className={styles.bgImg}
           src="/img-mv.jpg"
           alt=""
           width={4000}
           height={1200}
+          priority
+          sizes="100vw"
         />
       </section>
       <section className={styles.news}>
