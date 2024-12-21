@@ -22,7 +22,7 @@ export default async function Home() {
           </p>
         </div>
         <Image
-          className={styles.bgImg}
+          className={styles.bgimg}
           src="/img-mv.jpg"
           alt=""
           width={4000}
